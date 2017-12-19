@@ -1,14 +1,6 @@
 const Elevator = require('./elevator.js');
 const Person = require('./person.js');
-
-const elevator = new Elevator()
-const person1 = new Person("Cristian", 3, 5)
-
-
-elevator.floorDown()
-elevator.floorDown()
-elevator.floorDown()
-elevator.floorDown()
-elevator.floorDown()
-
-elevator.start()
+var elevator = new Elevator()
+var person1 = new Person("Cristian", 1, 3)
+elevator.start();
+elevator.call(person1);
